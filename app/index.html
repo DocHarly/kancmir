@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Канцелярский мир</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,7 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="sass\app\libs\font-awesome\css\font-awesome.min.css">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -24,33 +25,59 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #f3f2f2; }</style>
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #f3f2f2 }</style>
 
 </head>
 
 <body>
-	<div class="my-header">
+	<div class="my-header"> <!--Верхнее меню -->
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 					
 					<div class="top-menu">
 						<ul>
-							<li>О компании</li>
-							<li>Контакты</li>
-							<li>Физ. лицам</li>
-							<li>Юр. лицам</li>
-							<li>Оптовикам</li>
-							<li>Вход/регистрация</li>
+							<a href="#"><li><i class="fa fa-address-card-o" aria-hidden="true"></i>О компании</li></a>
+							<a href="#"><li><i class="fa fa-address-book-o" aria-hidden="true"></i>Контакты</li></a>
+							<a href="#"><li><i class="fa fa-male" aria-hidden="true"></i>Физ. лицам</li></a>
+							<a href="#"><li><i class="fa fa-file" aria-hidden="true"></i>Юр. лицам</li></a>
+							<a href="#"><li><i class="fa fa-handshake-o" aria-hidden="true"></i>Оптовикам</li></a>
+							<a href="#"><li><b><i class="fa fa-user-circle-o" aria-hidden="true"></i>Вход/регистрация</b></li></a>
 						</ul>
 					</div>
 					
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> <!--конец меню-->
 
-	
+	<div class="shapka"><!--лого, поиск, корзина, часы работы -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="col-sm-3">
+						<a href="#"><img class="logo" src="img/logo.jpg"></a>
+					</div>
+					<div class="search">
+						<div class="col-sm-4">
+							<input type="text" name="search" placeholder="Введите код или название товара..">
+						</div>
+					</div>
+					<div class="rabota">
+						<div class="col-sm-3">
+							<h4>8(800)000-00-00</h4>
+							<p>Пн-пт с 9:00 до 20:00</p>
+						</div>
+					</div>
+					<div class="korzina">
+						<div class="col-sm-2">
+							<i class="fa fa-shopping-basket" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>		
+	</div><!--end -->
 	
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
