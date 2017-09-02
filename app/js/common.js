@@ -7,4 +7,10 @@ $(function() {
 		smartSpeed: 700
 	});
 
+	//Resize Window
+	function onResize() {
+		$('.foto').equalHeights();
+	}onResize();
+	window.onresize = function() {onResize()};
+
 });
