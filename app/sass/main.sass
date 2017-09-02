@@ -227,6 +227,37 @@ body
 			span
 				font-weight: bold
 				padding: 0 10px
+	&-cart
+		.active
+			color: $accent
+			font-weight: bold
+		.cart
+			background-color: #FFF
+			img
+				width: 80%
+				margin: 0 10%
+			&-prices
+				.cart-price
+					img
+						margin: 30px 0
+				.owl-nav
+					position: absolute
+					top: 0
+					width: 100%
+					z-index: 2
+					> div
+						position: absolute
+						top: 50px
+						color: #999
+						font-size: 40px
+						transition: opasity .5s ease
+						padding: 0 10px
+						&:hover
+							opacity: .6
+						&.owl-prev
+							left: -60px
+						&.owl-next
+							right: -60px
 
 .podpiska
 	height: 70px
