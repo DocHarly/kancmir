@@ -233,9 +233,36 @@ body
 			font-weight: bold
 		.cart
 			background-color: #FFF
+			box-shadow: 0 0 1px rgba(0,0,0,0.5);
+			height: 685px
 			img
 				width: 80%
 				margin: 0 10%
+			.fa-star
+				color: yellow
+				font-size: 18px
+			&-l
+				background-color: #FFF
+				box-shadow: 0 0 1px rgba(0,0,0,0.5);
+				height: 685px
+				.cen
+					font-weight: bold
+					font-size: 22px
+					text-align: center
+				.button
+					width: 300px
+					margin-bottom: 20px
+					margin-left: 10%
+				p
+					text-align: center
+				.dos
+					text-align: center
+					font-size: 20px
+				.fa
+					font-size: 20px
+					margin-right: 10px
+				.fa-check
+					color: green
 			&-prices
 				.cart-price
 					img
@@ -258,6 +285,57 @@ body
 							left: -60px
 						&.owl-next
 							right: -60px
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 16px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+	 		opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+.har
+	margin-top: 20px
+	background-color: #fff
+	ul
+		margin: 0
+		padding: 12px
+	ul li
+		display: inline
+		font-size: 20px
+		padding-left: 75px
 
 .podpiska
 	height: 70px
