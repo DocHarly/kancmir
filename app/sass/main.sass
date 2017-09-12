@@ -239,7 +239,7 @@ body
 			box-shadow: 0 0 1px rgba(0,0,0,0.5);
 			height: 685px
 			img
-				width: 80%
+				width: 60%
 				margin: 0 10%
 			.fa-star
 				color: yellow
@@ -343,6 +343,7 @@ body
 .podpiska
 	height: 70px
 	background-color: #3d3d3d
+	margin-top: 50px
 
 .text-podpiska
 	h2
@@ -672,11 +673,7 @@ $white: #fff
 $red: #125389
 
 //urls
-<<<<<<< HEAD
-$url_0: url(img/slider.png)
-=======
-$url_0: url( ../img/slider.png)
->>>>>>> 02bc322aeff1c2e18769d830ffc233f365b51f3c
+
 
 #slider
 	margin-top: 10px 
@@ -687,15 +684,12 @@ $url_0: url( ../img/slider.png)
 	.ui-slider-handle 
 		position: absolute
 		z-index: 2
-<<<<<<< HEAD
 		width: 18px
 		height: 18px
 		background-image: url(../img/slider.png)
-=======
 		width: 13px
 		height: 13px
 		background-image: url(../img/slider.png) 
->>>>>>> 02bc322aeff1c2e18769d830ffc233f365b51f3c
 		background-size: cover
 		cursor: pointer
 
@@ -736,5 +730,32 @@ $url_0: url( ../img/slider.png)
 .ui-corner-all 
 	border-radius($radius, $vertical-radius)
 	border-radius: 4px
+
+.tabs__content 
+	display: none
+	p
+		padding-left: 75px
+	h4
+		padding-left: 75px
+	&.active
+		display: block
+.conta
+	li
+		display: block !important
+		font-size: 18px !important
+.tabs__caption
+	li
+		&.active
+			color: $accent
+.blok-otziv
+	.time
+		font-size: 12px
+	.otziv
+		padding: 0 0
+			
+	
+
+
+	
 
 @import "media" // Всегда в конце
