@@ -665,20 +665,14 @@ body
 		padding-left: 10px
 		position: absolute
 		p
-			position: absolute
-		.kol
-			position: absolute
-			left: 60px
-		.upak
-			position: absolute
-			left: 60px
+			
 //colors
 $color_quill_gray_approx: #d4d4d4
 $white: #fff
 $red: #125389
 
 //urls
-$url_0: url( img/slider.png)
+$url_0: url(img/slider.png)
 
 #slider
 	margin-top: 10px 
@@ -689,9 +683,10 @@ $url_0: url( img/slider.png)
 	.ui-slider-handle 
 		position: absolute
 		z-index: 2
-		width: 13px
-		height: 13px
-		background: $url_0 no-repeat
+		width: 18px
+		height: 18px
+		background-image: url(../img/slider.png)
+		background-size: cover
 		cursor: pointer
 
 	.ui-slider-range 
@@ -704,7 +699,7 @@ $url_0: url( img/slider.png)
 
 
 .ui-slider-horizontal 
-	height: 3px
+	height: 5px
 	.ui-slider-handle 
 		top: -5px
 		margin-left: -6px
