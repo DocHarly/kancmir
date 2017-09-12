@@ -111,3 +111,10 @@ jQuery("input#maxCost").change(function(){
     }
     jQuery("#slider").slider("values",1,value2);
 });
+
+$(document).ready(function() {
+	$('.block').on('click', '.extremum-click', function() {
+		$(this).toggleClass('red').siblings('.extremum-slide').slideToggle(0);
+	});
+});
+

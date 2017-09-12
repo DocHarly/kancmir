@@ -678,7 +678,7 @@ $white: #fff
 $red: #125389
 
 //urls
-$url_0: url( img/slider.png)
+$url_0: url( ../img/slider.png)
 
 #slider
 	margin-top: 10px 
@@ -691,7 +691,8 @@ $url_0: url( img/slider.png)
 		z-index: 2
 		width: 13px
 		height: 13px
-		background: $url_0 no-repeat
+		background-image: url(../img/slider.png) 
+		background-size: cover
 		cursor: pointer
 
 	.ui-slider-range 
@@ -731,5 +732,5 @@ $url_0: url( img/slider.png)
 .ui-corner-all 
 	border-radius($radius, $vertical-radius)
 	border-radius: 4px
-	
+
 @import "media" // Всегда в конце

@@ -31,7 +31,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/js/bootstrap.min.js',
 		'app/libs/owl.carousel/owl.carousel.min.js',
 		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
-		'app/libs/u.slider/jquery.ui-slider.min.js',
+		'app/libs/u.slider/jquery-ui.min.js',
 		'app/libs/equalHeights/equalheights.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
