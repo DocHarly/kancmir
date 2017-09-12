@@ -1,6 +1,8 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "menu"
+@import "registration"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -38,6 +40,7 @@ body
 	overflow-x: hidden
 	opacity: 1
 	background-color: #f3f2f2
+
 
 .img-responsive
 	display: block
@@ -340,9 +343,11 @@ body
 .podpiska
 	height: 70px
 	background-color: #3d3d3d
+
 .text-podpiska
 	h2
 		color: white
+		font-size: 24px
 	input
 		width: 500px
 		position: absolute
@@ -360,12 +365,15 @@ body
 .spis
 	h4
 		color: #a9a8a8
+		font-size: 16px
 	li
 		color: white
 		list-style-type: none
 	ul
 		margin-left: 0
 		padding-left: 0
+	a
+		color: white
 .dannie
 	font-size: 24px
 .soc-seti
@@ -437,6 +445,7 @@ body
 		position: absolute
 		color: white
 		padding-left: 50px
+		padding-top: 12px
 .ukazatel2
 	img
 		width: 28%
@@ -446,6 +455,7 @@ body
 		position: absolute
 		color: white
 		left: 30%
+		padding-top: 12px
 .ukazatel3
 	img
 		width: 28%
@@ -455,6 +465,7 @@ body
 		position: absolute
 		color: white
 		left: 48%
+		padding-top: 12px
 .ukazatel4
 	img
 		width: 28%
@@ -464,6 +475,7 @@ body
 		position: absolute
 		color: white
 		left: 66%
+		padding-top: 12px
 
 .nomenklatura
 	background-color: #FFF
@@ -503,7 +515,7 @@ body
 	background-color: #FFF
 	height: 300px
 	box-shadow: 0 0 10px rgba(0,0,0,0.5)
-	margin-top: 20px
+	margin-top: 10px
 	width: 750px
 .blok1
 	position: absolute
@@ -587,4 +599,137 @@ body
 		width: 200px
 		padding-top: 50px
 		margin-left: 50px
+	.tex
+		padding-left: 90px
+		h4
+			font-size: 14px
+			font-weight: 700
+		p
+			color: #125389
+			position: absolute
+		b
+			padding-left: 40px
+			color: #125389
+	.xar
+		ul
+			position: absolute
+			padding-left: 90px
+			padding-top: 10px
+		li
+			list-style-type: none
+			font-size: 14px
+.zagolovok
+	text-align: center
+.blo2
+	background-color: #e8e8e8
+	height: 300px
+	width: 260px
+	position: absolute
+	.pri
+		h3
+			font-weight: 700
+			padding-left: 10px
+	.ik
+		button
+			position: absolute	
+			width: 150px
+			height: 50px
+			margin-left: 20px
+			background-color: #125389
+			color: white
+	.amount
+		position: absolute
+		left: 170px
+		.down
+			padding-left: 60px
+			position: absolute
+			font-size: 20px
+			top: 20px
+		.up
+			position: absolute
+			left: 60px
+			font-size: 20px
+		input
+			width: 50px
+			height: 50px
+			padding-left: 20px
+			position: absolute
+	.na
+		padding-top: 60px
+		padding-left: 10px
+		p
+			font-weight: 700
+			color: green
+
+	.part
+		padding-left: 10px
+		position: absolute
+		p
+			position: absolute
+		.kol
+			position: absolute
+			left: 60px
+		.upak
+			position: absolute
+			left: 60px
+//colors
+$color_quill_gray_approx: #d4d4d4
+$white: #fff
+$red: #125389
+
+//urls
+$url_0: url( img/slider.png)
+
+#slider
+	margin-top: 10px 
+	width: 200px
+
+.ui-slider 
+	position: relative
+	.ui-slider-handle 
+		position: absolute
+		z-index: 2
+		width: 13px
+		height: 13px
+		background: $url_0 no-repeat
+		cursor: pointer
+
+	.ui-slider-range 
+		position: absolute
+		z-index: 1
+		font-size: .7em
+		display: block
+		border: 0
+		overflow: hidden
+
+
+.ui-slider-horizontal 
+	height: 3px
+	.ui-slider-handle 
+		top: -5px
+		margin-left: -6px
+
+	.ui-slider-range 
+		top: 0
+		height: 100%
+
+	.ui-slider-range-min 
+		left: 0
+
+	.ui-slider-range-max 
+		right: 0
+
+
+.ui-widget-content 
+	border: 1px solid $color_quill_gray_approx
+	background: $white
+
+.ui-widget-header 
+	border: 1px solid $color_quill_gray_approx
+	background: $red
+
+.ui-corner-all 
+	border-radius($radius, $vertical-radius)
+	border-radius: 4px
+	
 @import "media" // Всегда в конце

@@ -31,7 +31,7 @@
 
 <body class="is_home">
 	<div class="header"><!--лого, поиск, корзина, часы работы -->
-		<div class="container">
+		<div class="container container-fluid">
 			<div class="row">
 
 				<div class="col-sm-12">
@@ -48,12 +48,11 @@
 
 					<div class="col-sm-3">
 						<div class="registration">
-							<a href="#"><b><i class="fa fa-user-circle-o" aria-hidden="true"></i>Вход/регистрация</b></a>
+							<a href="#form" class="popup"><b><i class="fa fa-user-circle-o" aria-hidden="true"></i>Вход/регистрация</b></a>
 						</div>
 					</div>
 
 				</div>
-
 				<div class="col-sm-12">
 
 					<div class="col-sm-3">
@@ -70,7 +69,7 @@
 					</div>
 					
 					<div class="basket">
-						<a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i>1 235 руб</a>
+						<a href="korzina.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>1 235 руб</a>
 					</div>
 
 				</div>
@@ -79,24 +78,207 @@
 		</div>		
 	</div><!--end -->
 
-	<div class="main-menu"><!--основное меню с выпадающими списками -->
-		<div class="container">
-			<div class="row">
-					<div class="col-sm-12">
-						<div class="spisok">
-							<ul>
-								<li><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>каталог</a></li>
-								<li><a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>О компании</a></li>
-								<li><a href="#"><i class="fa fa-male" aria-hidden="true"></i>Физ. лицам</a></li>
-								<li><a href="#"><i class="fa fa-file" aria-hidden="true"></i>Юр. лицам</a></li>
-								<li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>Оптовикам</a></li>
-								<li><a href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i>Контакты</a></li>
-							</ul>
-						</div>
-					</div>
-			</div>
-		</div>
-	</div><!--end -->
+<div class="hidden"><!--form registration -->
+		<form id="form" class="format"><!-- вывод формы регистрации -->
+			<div class="login-page">
+				  <div class="form1"> 
+				    <form class="register-form">
+				    <h4>Регистрация</h4>
+				      <input type="text" placeholder="Имя"/>
+				      <input type="password" placeholder="Пароль"/>
+				      <input type="text" placeholder="email"/>
+				      <button>Создать</button>
+				      <p class="message">Уже зарегестрированы?? <a href="#form2" class="popup1">Войти</a></p>
+				    </form>
+				    </div></div>
+					</form>
+					 
+				    <form id="form2" class="login-form">
+				    <h4>Войдите в систему</h4>
+				      <input type="text" placeholder="username"/>
+				      <input type="password" placeholder="password"/>
+				      <button class="voi">Войти</button>
+				      <p class="message">Не зарегестрированы? <a href="#form" class="popup">Создать аккаунт</a></p>
+				    </form>
+				  
+
+	</div><!--end-->
+
+	<nav class="navbar"> <!-- by inka-->
+  <div class="row container-fluid">
+    <div class="col-md-1 col-xs-1"></div>
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed navbar-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="col-md-10 col-xs-10 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+        	<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">
+        		<i class="fa fa-bars" aria-hidden="true"></i> Каталог товаров <span class="caret"></span>
+        	</a>
+        	<div class="dropdown-menu">
+                <div class="row float-none top15">
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/бумажная продукция.jpg" height="60" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Бумажная продукция</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/фотоальбомы фоторамки.jpg" height="60" class="leftimg"></div> <div class="col-md-6 pad0"><p>Фотоальбомы и фоторамки</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/пакеты.jpg" height="55" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Пакеты хоз. и подарочные</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/игры детские.jpg" height="60" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Игры детские</p></div> 
+                        </a>
+                    </div>
+                </div>
+                <div class="row float-none top15">
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/хозтовары.png" height="35" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Хозтовары</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/товары для школы.jpg" height="50" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Товары для школы</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/бумага и пленки.jpg" height="85" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Бумага и пленки</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/диски дискеты.jpg" height="58" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Диски и дискеты</p></div> 
+                        </a>
+                    </div>
+                </div>
+                <div class="row float-none top15">
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/chistyashhie-sredstva-dlya-kompyuterov.jpg" height="60" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Чистящие средства для техники</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/худ школа.jpg" height="55" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Художественная школа</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/папки и архив.jpg" height="75" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Папки и архивация</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/демонстрационное оборуд.jpg" height="40" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Демонстрационное оборудование</p></div> 
+                        </a>
+                    </div>
+                </div>
+                <div class="row float-none top15">
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/канцтовары.jpg" height="40" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Канцтовары</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/для офиса.jpg" height="60" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Для офиса</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/мебель.png" height="65" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Мебель</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/распродажа.jpg" height="45" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Распродажа</p></div> 
+                        </a>
+                    </div>
+                </div>
+                <div class="row float-none top15">
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/suveniry.png" height="60" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Сувениры и подарки</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/писменные принадлежности.png" height="55" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Письменные принадлежности</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                        <a href="#">
+                            <div class="col-md-6 pad0"><img src="img/lists/творчество.jpg" height="85" class="leftimg"></div>
+                            <div class="col-md-6 pad0"><p>Товары для творчества</p></div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 col-md-5 col-lg-3 catalog-text">
+                    </div>
+                </div>
+	       </div>
+        </li>
+        <li>
+        	<a class="" href="#">
+        		<i class="fa fa-address-card-o" aria-hidden="true"></i> О компании
+        	</a>
+        </li>
+        <li>
+        	<a class="" href="#">
+        		<i class="fa fa-male" aria-hidden="true"></i> Физ. лицам
+        	</a>
+        </li>
+        <li>
+        	<a class="" href="#">
+        		<i class="fa fa-address-card-o" aria-hidden="true"></i> Юр. лицам
+        	</a>
+        </li>
+        <li>
+        	<a class="" href="#">
+        		<i class="fa fa-handshake-o" aria-hidden="true"></i> Оптовикам
+        	</a>
+        </li>
+        <li>
+        	<a class="" href="#">
+        		<i class="fa fa-address-book-o" aria-hidden="true"></i> Контакты
+        	</a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    <div class="col-md-1 col-xs-1"></div>
+  </div><!-- /.container-fluid -->
+</nav> <!--end by inka-->
 
 	<div class="my-content">
 	
@@ -452,7 +634,7 @@
 						<div class="spis">
 							<h4>Информация для покупателей</h4>
 							<ul>
-								<li>Политика конфеденциальности</li>
+								<li><a href="simple-page.html">Политика конфеденциальности</a></li>
 								<li>Гарантии</li>
 								<li>Обмен и возврат</li>
 								<li>Скидочные карты</li>
