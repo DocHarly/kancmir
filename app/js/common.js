@@ -30,6 +30,15 @@ $(function() {
 		}
 	});
 
+	$('button').on('click',function(e) {
+    if ($(this).hasClass('grid')) {
+        $('.blo').removeClass('col-sm-12 list').addClass('col-sm-4 grid');
+    }
+    else if($(this).hasClass('list')) {
+        $('.blo').removeClass('col-sm-4 grid').addClass('col-sm-12 list');
+    }
+	});
+
 
 
 	//Resize Window
@@ -171,3 +180,4 @@ $(function() {
 
 })
 })(jQuery)
+

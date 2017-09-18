@@ -592,88 +592,64 @@ body
 		width: 200px
 .fis
 	padding-top: 20px
-.blo
-	height: 300px
-	background-color: #fff
-	margin-top: 40px
-	img
-		width: 200px
-		padding-top: 50px
-		margin-left: 50px
-	.tex
-		padding-left: 90px
-		h4
-			font-size: 14px
-			font-weight: 700
-		p
-			color: #125389
-			position: absolute
-		b
-			padding-left: 40px
-			color: #125389
-	.xar
-		ul
-			position: absolute
-			padding-left: 90px
-			padding-top: 10px
-		li
-			list-style-type: none
-			font-size: 14px
-.zagolovok
-	text-align: center
-.blo2
-	background-color: #e8e8e8
-	height: 300px
-	width: 260px
-	position: absolute
-	.pri
-		h3
-			font-weight: 700
-			padding-left: 10px
-	.ik
-		button
-			position: absolute	
-			width: 150px
-			height: 50px
-			margin-left: 20px
-			background-color: #125389
-			color: white
-	.amount
-		position: absolute
-		left: 170px
-		.down
-			padding-left: 60px
-			position: absolute
-			font-size: 20px
-			top: 20px
-		.up
-			position: absolute
-			left: 60px
-			font-size: 20px
-		input
-			width: 50px
-			height: 50px
-			padding-left: 20px
-			position: absolute
-	.na
-		padding-top: 60px
-		padding-left: 10px
-		p
-			font-weight: 700
-			color: green
 
-	.part
-		padding-left: 10px
-		position: absolute
-		p
+.blo 
+	background-color: #FFF
+	margin-top: 30px
+	&.list
+		.col-sm-8
+			border-right: 1px solid #a9a8a8
+		img
+			width: 100%
+			margin: 0
+			padding-top: 20px
+		.pri
+			h3
+				font-weight: 700
+				padding-left: 10px
+		.ik
+			button
+				position: absolute	
+				width: 150px
+				height: 50px
+				margin-left: 20px
+				background-color: #125389
+				color: white
+		.amount
+			position: absolute
+			left: 170px
+			.down
+				padding-left: 60px
+				position: absolute
+				font-size: 20px
+				top: 20px
+			.up
+				position: absolute
+				left: 60px
+				font-size: 20px
+			input
+				width: 50px
+				height: 50px
+				padding-left: 20px
+				position: absolute
+		.na
+			padding-top: 60px
+			padding-left: 10px
+			p
+				font-weight: 700
+				color: green
+		.part
+			padding-left: 10px
+			position: absolute
+	&.grid
+		
+
+		
 			
 //colors
 $color_quill_gray_approx: #d4d4d4
 $white: #fff
 $red: #125389
-
-//urls
-
 
 #slider
 	margin-top: 10px 
@@ -687,9 +663,6 @@ $red: #125389
 		width: 18px
 		height: 18px
 		background-image: url(../img/slider.png)
-		width: 13px
-		height: 13px
-		background-image: url(../img/slider.png) 
 		background-size: cover
 		cursor: pointer
 
