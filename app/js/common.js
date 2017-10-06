@@ -33,9 +33,22 @@ $(function() {
 	$('button').on('click',function(e) {
     if ($(this).hasClass('grid')) {
         $('.blo').removeClass('col-sm-12 list').addClass('col-sm-4 grid');
+        $('.vv').removeClass('col-sm-4').addClass('col-sm-12');
+        $('.mom').removeClass('col-sm-8').addClass('col-sm-12');
+        $('.mo').removeClass('col-sm-7').addClass('col-sm-12');
+				$(".dad").css("display", "none");
+				$(".na").css("display", "none");
+				$(".part").css("display", "none");
+				$(".col-sm-12").css("padding", "0");
     }
     else if($(this).hasClass('list')) {
         $('.blo').removeClass('col-sm-4 grid').addClass('col-sm-12 list');
+				$('.vv').removeClass('col-sm-12').addClass('col-sm-4');
+				$('.mom').removeClass('col-sm-12').addClass('col-sm-8');
+				$('.mo').removeClass('col-sm-12').addClass('col-sm-7');
+				$(".dad").css("display", "block");
+				$(".na").css("display", "block");
+				$(".part").css("display", "block");
     }
 	});
 
@@ -70,9 +83,9 @@ jQuery("input#minCost").change(function(){
         value1 = value2;
         jQuery("input#minCost").val(value1);
     }
-    jQuery("#slider").slider("values",0,value1);    
+    jQuery("#slider").slider("values",0,value1);
 });
-  
+
 jQuery("input#maxCost").change(function(){
     var value1=jQuery("input#minCost").val();
     var value2=jQuery("input#maxCost").val();
@@ -84,7 +97,7 @@ jQuery("input#maxCost").change(function(){
     jQuery("#slider").slider("values",1,value2);
 });
 
-	
+
 
 });
 
